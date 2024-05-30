@@ -8,7 +8,7 @@
 	 */
 
 
-import java.util.*; //Scanner, List, ArrayList, Set, HashSet, Map, HashMap
+import java.util.*;
 
 public class Problem4 {
 
@@ -37,13 +37,11 @@ public class Problem4 {
         System.out.println("Vertex list: " + vertexList);
         System.out.println("Edges list: " + edgeList);
 
-        // Initialize adjacent vertex list
         Map<String, List<String>> adjacencyList = new HashMap<>();
         for (String vertex : vertexList) {
             adjacencyList.put(vertex, new ArrayList<>());
         }
 
-        // List adjacent edges of each vertex
         for (String edge : edgeList) {
             String[] vertices = edge.split(" ");
             String v1 = vertices[0];

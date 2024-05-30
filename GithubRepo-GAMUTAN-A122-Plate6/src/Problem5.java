@@ -26,7 +26,7 @@ public class Problem5 {
 
     public static boolean isBipartite(int[][] graph) {
         int n = graph.length;
-        int[] colors = new int[n]; // 0: uncolored, 1: red, -1: blue
+        int[] colors = new int[n];
 
         for (int i = 0; i < n; i++) {
             if (colors[i] == 0) {
@@ -42,18 +42,16 @@ public class Problem5 {
     private static boolean bfsCheck(int[][] graph, int start, int[] colors) {
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(start);
-        colors[start] = 1; // Start coloring with red
+        colors[start] = 1;
 
         while (!queue.isEmpty()) {
             int node = queue.poll();
             for (int neighbor = 0; neighbor < graph[node].length; neighbor++) {
-                if (graph[node][neighbor] > 0) { // Check if there is an edge
+                if (graph[node][neighbor] > 0) {
                     if (colors[neighbor] == 0) {
-                        // Color with opposite color
                         colors[neighbor] = -colors[node];
                         queue.offer(neighbor);
                     } else if (colors[neighbor] == colors[node]) {
-                        // If the neighbor has the same color, graph is not bipartite
                         return false;
                     }
                 }

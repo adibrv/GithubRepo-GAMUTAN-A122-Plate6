@@ -13,19 +13,10 @@ import java.util.*;
 public class Problem7 {
 
     public static void main(String[] args) {
-        // Example input
-        String input = "141,421,211,131,431,231";
-        
-        // Parse the edges from the input
+        String input = "121,231,341,411";
         List<Edge> edges = parseEdges(input);
-        
-        // Determine the number of vertices
         int numVertices = determineNumVertices(edges);
-        
-        // Create and populate the incidence matrix
         int[][] incidenceMatrix = createIncidenceMatrix(edges, numVertices);
-        
-        // Display the incidence matrix
         displayIncidenceMatrix(incidenceMatrix);
     }
     

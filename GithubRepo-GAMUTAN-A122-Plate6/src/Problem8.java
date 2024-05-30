@@ -10,7 +10,6 @@ import java.util.*;
 
 public class Problem8 {
     public static void main(String[] args) {
-        // Example test case: isomorphic graphs
         String vertices1 = "A,B,C,D,E,F";
         String edges1 = "AB,BC,CF,FD,DB,BE,ED,EF,AF";
         String vertices2 = "U,V,W,X,Y,Z";
