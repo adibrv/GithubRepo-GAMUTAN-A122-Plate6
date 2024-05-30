@@ -6,7 +6,7 @@
 	 * Problem 3. Write a java program that will determine if a graph has a cycle or not.
 	 */
 
-public class ProblemThree {
+public class Problem3 {
 	
     public static boolean dfs(int v, int parent, boolean[] visited, int[][] adjacencyMatrix) {
         visited[v] = true;

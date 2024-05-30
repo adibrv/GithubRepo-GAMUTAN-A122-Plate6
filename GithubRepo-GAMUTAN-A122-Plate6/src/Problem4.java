@@ -10,7 +10,7 @@
 
 import java.util.*; //Scanner, List, ArrayList, Set, HashSet, Map, HashMap
 
-public class ProblemFour {
+public class Problem4 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

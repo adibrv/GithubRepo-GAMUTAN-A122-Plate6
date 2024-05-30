@@ -11,7 +11,7 @@
 
 import java.util.*; //Scanner, List, ArrayList, Set, HashSet, Map, HashMap
 
-public class ProblemOne {
+public class Problem1 {
 
     // Depth-first Search Function
 	private static void dfs(String vertex, Set<String> visited, Map<String, List<String>> adjacencyList) {

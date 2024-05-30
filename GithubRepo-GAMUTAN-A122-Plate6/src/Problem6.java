@@ -12,7 +12,7 @@
 
 import java.util.*; // Scanner, List, ArrayList, Map, HashMap
 
-public class ProblemSix {
+public class Problem6 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

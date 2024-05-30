@@ -10,7 +10,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class ProblemFive {
+public class Problem5 {
 
     public static void main(String[] args) {
         int[][] adjacencyMatrix = {

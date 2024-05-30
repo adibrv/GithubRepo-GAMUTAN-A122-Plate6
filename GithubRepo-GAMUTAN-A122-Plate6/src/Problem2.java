@@ -12,7 +12,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProblemTwo {
+public class Problem2 {
 
     public static void main(String[] args) {
         int[][] adjacencyMatrix = {
