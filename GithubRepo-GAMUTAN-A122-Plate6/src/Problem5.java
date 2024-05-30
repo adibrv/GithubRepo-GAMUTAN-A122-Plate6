@@ -14,10 +14,11 @@ public class Problem5 {
 
     public static void main(String[] args) {
         int[][] adjacencyMatrix = {
-            {0, 1, 0, 1},
-            {1, 0, 1, 0},
-            {0, 1, 0, 1},
-            {1, 0, 1, 0},
+        		{0, 1, 0, 1},
+        		{1, 0, 0, 1},
+        		{0, 0, 0, 0},
+        		{1, 1, 0, 0}
+
         };
 
         System.out.println("The graph is " + (isBipartite(adjacencyMatrix) ? "bipartite" : "not bipartite"));

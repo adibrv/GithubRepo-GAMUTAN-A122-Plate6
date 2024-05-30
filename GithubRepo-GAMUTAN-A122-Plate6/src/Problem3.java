@@ -37,11 +37,10 @@ public class Problem3 {
 
     public static void main(String[] args) {
         int[][] adjacencyMatrix = {
-                {0, 1, 0, 1, 0},
-                {1, 0, 1, 0, 0},
-                {0, 1, 0, 0, 1},
-                {1, 0, 0, 0, 0},
-                {0, 0, 1, 0, 0}
+        		{0, 0, 1, 0},
+        		{0, 0, 1, 0},
+        		{1, 1, 0, 1},
+        		{0, 0, 1, 0}
         };
 
         if (cycleCheck(adjacencyMatrix)) {
